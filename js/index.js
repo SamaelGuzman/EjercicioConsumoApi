@@ -11,6 +11,7 @@ const listUsers = async () => {
         <td>${user.username}</td>
         <td>${user.email}</td>
         <td>${user.website}</td>
+        <td>${user.company.catchPhrase}</td>
         
         
         
@@ -19,6 +20,7 @@ const listUsers = async () => {
         </tr>`;
 
     // document.getElementById("tableBody_Users").innerHTML = tableBody
+    console.log(user)
     tableBody_Users.innerHTML = tableBody;
   });
 };
